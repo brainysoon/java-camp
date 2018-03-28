@@ -4,9 +4,16 @@ import java.util.List;
 import java.util.Map;
 
 public class PracticeA {
-    Map<String,Integer> createUpdatedCollection(Map<String,Integer> collectionA, Map<String,List<String>> object) {
-        //实现练习要求，并改写该行代码。
 
-        return null;
+    private static final String VALUE = "value";
+
+    Map<String, Integer> createUpdatedCollection(Map<String, Integer> collectionA, Map<String, List<String>> object) {
+
+        object.get(VALUE).forEach(item -> collectionA.forEach((key, value) -> {
+            if (key.equals(item)) {
+                collectionA.put(key, value - 1);
+            }
+        }));
+        return collectionA;
     }
 }
