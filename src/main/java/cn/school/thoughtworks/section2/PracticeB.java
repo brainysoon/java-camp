@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class PracticeB {
+import static cn.school.thoughtworks.constant.GlobalConstants.NUMBER_SEPARATOR;
 
-    private final String NUMBER_SEPARATOR = "-";
+public class PracticeB {
 
     Map<String, Integer> countSameElements(List<String> collection1) {
 

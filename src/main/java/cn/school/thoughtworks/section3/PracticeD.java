@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class PracticeD {
+import static cn.school.thoughtworks.constant.GlobalConstants.NUMBER_SEPARATOR;
+import static cn.school.thoughtworks.constant.GlobalConstants.VALUE_PROPERTY;
 
-    private final String NUMBER_SEPARATOR = "-";
-    private static final String VALUE = "value";
+public class PracticeD {
 
     Map<String, Integer> createUpdatedCollection(List<String> collectionA, Map<String, List<String>> object) {
 
@@ -19,7 +19,7 @@ public class PracticeD {
                             }
                             return 1;
                         }, Integer::sum)));
-        object.get(VALUE).forEach(item -> collection3.forEach((key, value) -> {
+        object.get(VALUE_PROPERTY).forEach(item -> collection3.forEach((key, value) -> {
             if (key.equals(item)) {
                 collection3.put(key, value - value / 3);
             }

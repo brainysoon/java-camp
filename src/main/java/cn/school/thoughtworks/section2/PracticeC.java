@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class PracticeC {
+import static cn.school.thoughtworks.constant.GlobalConstants.NUMBER_SEPARATOR_CHAIN;
+import static cn.school.thoughtworks.constant.GlobalConstants.SQUARE_BRACKET_END;
 
-    private static final List<String> NUMBER_SEPARATOR_CHAIN = Arrays.asList("-", "[", ":");
-    private static final String SQUARE_BRACKET_END = "]";
+public class PracticeC {
 
     Map<String, Integer> countSameElements(List<String> collection1) {
 

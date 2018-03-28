@@ -4,14 +4,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class PracticeC {
+import static cn.school.thoughtworks.constant.GlobalConstants.VALUE_PROPERTY;
 
-    private static final String VALUE = "value";
+public class PracticeC {
 
     List<String> collectSameElements(List<String> collection1, Map<String, List<String>> collection2) {
 
         return collection1.stream()
-                .filter(collection2.get(VALUE)::contains)
+                .filter(collection2.get(VALUE_PROPERTY)::contains)
                 .collect(Collectors.toList());
     }
 }
